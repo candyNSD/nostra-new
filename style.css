@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    color: #000;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.sectionContainer {
+    margin: 0 20px
+}
+.header-wrapper img {
+    width: 200px;
+    height: 70px;
+}
+
+.navWrapper li a:hover {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+.navWrapper li a {
+    padding-bottom: 5px;
+}
+.loginBtn {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #1D232C;
+    color: #1D232C;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.loginBtn:hover {
+    background-color: #1D232C;
+    color: #bbb;
+}
+.loginpagebtn .loginBtn{
+    border-radius: 50px;
+    width: 150px;
+}
+.signInWrapper h1 {
+    font-size: 30px;
+}
+.signInWrapper p {
+    font-size: 12px;
+}
+.sign-input {
+    padding: 10px;
+    border: 2px solid #c9c3c3;
+    box-shadow: #969494;
+    border-radius: 50px;
+    width: 300PX;
+    align-items: center;
+}
+.sign-input input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+.continue-text {
+    display: flex;
+    margin-top: 1rem;
+    color: #737373;
+    font-size: 14px;
+    width: fit-content; /* Adjusted for compatibility */
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.continue-text::before,
+.continue-text::after {
+    content: "";
+    height: 1px;
+    width: 120%; /* Adjusted width to extend beyond the text */
+    background-color: #d4d4d4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.continue-text::before {
+    left: -130%; /* Position the ::before element to the left */
+}
+
+.continue-text::after {
+    right: -130%; /* Position the ::after element to the right */
+}
+.solicalLink {
+    padding: 10px;
+    border: 2px solid #c9c3c3;
+    box-shadow: #969494;
+    border-radius: 50px;
+    width: 250PX;
+    align-items: center;
+}
+.search-input {
+    padding: 5px;
+    border: 2px solid #c9c3c3;
+    box-shadow: #969494;
+    border-radius: 50px;
+    width: 200PX;
+    align-items: center;
+}
+
+.search-input input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+
+.brand-img .brand-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.sliderWrapper {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    /* display: none; */
+}
+
+.sliderWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.shopBtn {
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+.fa-caret-left,
+.fa-caret-right {
+    font-size: 80px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+.fa-caret-left {
+    left: 35px;
+    top: 145px;
+}
+
+.fa-caret-right {
+    right: 35px;
+    top: 145px;
+
+}
+
+/* Arrival card */
+.arrival-card img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .15);
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+
+}
+
+.arrival-card .overlay {
+    background-color: rgba(0, 0, 0, .15);
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+
+}
+
+.arrival-card .shopBtn {
+    width: 150px;
+    height: 40px;
+
+}
+
+.arrival-card {
+    flex-basis: 22%;
+    flex-grow: 1;
+    height: 300px;
+    min-width: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.wanted-card {
+    flex-basis: 24%;
+    flex-grow: 1;
+    min-width: 250px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.wanted-card img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.limitedWrapper {
+    border-radius: 10px;
+}
+
+.limited-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.limited-text h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.limited-text h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.email-grid {
+    display: flex;
+
+}
+
+.email-box {
+    display: flex;
+    padding: 5px;
+    border: 2px solid #7b7d7f;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.email-box input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+    padding: 3px;
+}
+
+.subscribrBtn {
+    background-color: #1D232C;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: #bbb;
+}
+.subBtn {
+    background-color: #1D232C;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: #bbb;
+}
+.footerWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 20%));
+    grid-template-rows: repeat(auto-fit, minmax(8px, 1fr));
+    justify-items: center;
+    background-color: #e5e7eb;
+    grid-row-gap: 3px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #575454;
+}
+
+.footerItem:first-child {
+    color: #0a0a0a;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.footerItem {
+    font-size: 14px;
+}
+
+.footerCopy {
+    grid-column: 1 / -1;
+    width: 100%;
+    text-align: center;
+    color: #a3a3a3;
+    padding: 2.5px 0 0;
+    border-top: 2px solid #d4d4d4;
+}
+.nameError,.emailError,.phoneError, .passError {
+    display: none;
+    color: red;
+}
+
+/* collection */
+.collection-input { 
+    margin: 0 10px 0 0;
+}
+/* .collection-input {
+    
+    margin: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    display: none; 
+}
+
+label {
+    
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+span {
+    padding: 0 25px;
+}
+
+.collection-input:checked +span {
+    background-color: #3033b7; 
+} */
+
+.verical-line {
+    border: none;
+    border-left: 3px solid #1D232C;
+    height: 100%;
+    margin: 0 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.productList {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.product img {
+    width: 240px;
+}
+::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.filterTitle {
+    margin-top: 2.5rem; /* 10 */
+    margin-bottom: 2.5rem; /* 10 */
+    color: #2d3748; /* gray-800 */
+    font-size: 1.5rem; /* 2xl */
+    font-weight: 700; /* bold */
+}
+/* Mobile view */
+@media screen and (max-width:738px) {
+    .sectionContainer {
+        margin: 0 20px
+    }
+    .loginWrppaer {
+        display: flex;
+        }
+    .solicalSign {
+        display:hidden;
+    }
+
+    /* footer */
+    
+
+    .footerItem {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .footerCopy {
+        grid-column: 1 / -1; /* Ensure full width for footerCopy on mobile */
+        width: 100%;
+        text-align: center;
+        color: #a3a3a3;
+        padding: 2.5px 0 0;
+        border-top: 2px solid #d4d4d4;
+    }
+.footerList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+    /* collection Wrapper */
+    .collationWrapper .leftSection {
+        /* width: 10%; */
+    }
+    .productList .product img {
+        width: 150px;
+        height: 150px;
+    }
+    .productList .product h1 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .productList .product p {
+        font-size: 14px;
+    }
+
+    .filterTitle {
+        margin-top: 1.25rem; /* 5 */
+        margin-bottom: 1.25rem; /* 5 */
+        font-size: 1.25rem; /* xl */
+    }
+    .mob-solicalSign {
+        margin: 0;
+    }
+}

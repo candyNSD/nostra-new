@@ -1,0 +1,257 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Offer Section -->
+    <section class="offerWrapper flex justify-center items-center  bg-black text-white h-10 ml-0 mr-0">
+        <p>Sign up and GET 20% OFF for your first order. <a href="login.html" class="underline">Sign up now</a></p>
+        <p class="closeoffer cursor-pointer text-xl pl-20">X</p>
+    </section>
+    <div class="sectionContainer md:mx-20 md:mb-10">
+        <!-- Header Section -->
+        <section
+            class="header-wrapper flex items-center justify-between bg-white ml-0 mr-0 mt-3 mb-3 sticky top-0 z-20">
+            <div class="logo-img cursor-pointer flex">
+                <img src="./img/nostra-logo.webp">
+            </div>
+            <div class="gap-10 hidden text-gray-700 md:flex md:items-center md:justify-between">
+                <div class="navWrapper">
+                    <ul class="flex gap-5 justify-between items-center text-xl">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="hidden">
+                            <a href="#newarrival">New Arrival</a>
+                        </li>
+                        <li class="hidden">
+                            <a href="#mostWanted">Most Wanted</a>
+                        </li>
+                        <li>
+                            <a href="collection.html">Collections</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex gap-4 justify-center items-center">
+                    <div class="search-input flex gap-3 hidden">
+                        <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+                        <input type="text" placeholder="Search....">
+                    </div>
+                    <div class="shoppinglist flex gap-3 cursor-pointer">
+                        <a href="shoppingCard.html"><i class="fa-solid fa-cart-shopping text-2xl"></i></a>
+                        <a href="wishList.html"><i class="fa-regular fa-heart text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile view Header -->
+            <div class="md:hidden">
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="size-6 w-8  cursor-pointer">
+                    <path fill-rule="evenodd"
+                        d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd" />
+                </svg>
+
+                <div class="navWrapper-mob bg-gray-500 z-20 top-0  text-white fixed transition-all duration-1000"
+                    style="width: 50%; height:100%;right:-50%">
+                    <div class="text-right p-5 z-4">
+                        <p id="closeNav" class="text-2xl text-white cursor-pointer">X</p>
+                    </div>
+                    <ul class="flex  flex-col gap-5 text-xl p-10 ">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="hidden">
+                            <a href="#newarrival">New Arrival</a>
+                        </li>
+                        <li class="hidden">
+                            <a href="#mostWanted">Most Wanted</a>
+                        </li>
+                        <li>
+                            <a href="collection.html">Collections</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- collection section -->
+        <section class="collationWrapper">
+            <div class="dividedSection flex">
+                <div class="leftSection mt-10 mb-10 relative w-1/4">
+                    <h3 class="filterTitle">Occasion</h3>
+                    <div class="flex flex-col">
+                        <label><input type="checkbox" name="check" value="summer" class="collection-input">Summer</label>
+                        <label><input type="checkbox" name="check" value="party" class="collection-input">Party</label>
+                        <label><input type="checkbox" name="check" value="Beach" class="collection-input">Beach</label>
+                    </div>
+                    <h3 class="filterTitle">Colors</h3>
+                    <div class="flex flex-col">
+                        <label><input type="checkbox" name="check" value="Red" class="collection-input">Red</label>
+                        <label><input type="checkbox" name="check" value="Blue" class="collection-input">Blue</label>
+                        <label><input type="checkbox" name="check" value="White" class="collection-input">White</label>
+                        <label><input type="checkbox" name="check" value="Green" class="collection-input">Green</label>
+
+                    </div>
+                    <h3 class="filterTitle">Arrivals</h3>
+                    <div class="flex flex-col">
+                        <label><input type="checkbox" name="check" value="New" class="collection-input">New</label>
+                        <label><input type="checkbox" name="check" value="old" class="collection-input">Old</label>
+                    </div>
+                    <hr class="verical-line">
+                </div>
+                <div class="rightSection w-3/4">
+                    <div>
+                        <div class="search-input flex gap-3 w-full pl-5 pr-5">
+                            <input id="search" type="text" placeholder="Search....">
+                            <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+                        </div>
+                        <div class="productList">
+                            <div class="product">
+                                <img src="./img/collection1.jpg" alt="">
+                                <h1 class="text-2xl">Party Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">new,Red,Party</span>
+                            </div>
+                            <div class="product">
+                                <img src="./img/collection2.jpg" alt="">
+                                <h1 class="text-2xl">Beach Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">new,white,beach</span>
+                            </div>
+                            <div class="product">
+                                <img src="./img/collection3.jpg" alt="">
+                                <h1 class="text-2xl">Beach Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">old,white,beach</span>
+                            </div>
+                            <div class="product">
+                                <img src="./img/collection4.jpg" alt="">
+                                <h1 class="text-2xl">Floral Summer Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">new,Blue,summer</span>
+                            </div>
+                            <div class="product">
+                                <img src="./img/collection5.jpg" alt="">
+                                <h1 class="text-2xl">Beach Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">new,green,beach</span>
+                            </div>
+                            <div class="product">
+                                <img src="./img/collection6.jpg" alt="">
+                                <h1 class="text-2xl">Floral Summer Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">old,green,beach</span>
+                            </div>
+                            <div class="product">
+                                <img src="./img/shirt4.jpg" alt="">
+                                <h1 class="text-2xl">Beach Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">new,white,beach</span>
+                            </div>
+                            <div class="product">
+                                <img src="./img/collection3.jpg" alt="">
+                                <h1 class="text-2xl">Floral Summer Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">old,white,summer</span>
+                            </div>
+                            <div class="product">
+                                <img src="./img/shirt5.jpg" alt="">
+                                <h1 class="text-2xl">Party Shirt</h1>
+                                <p class="text-xl">$220</p>
+                                <span style="visibility:hidden;">new,white,party</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- subscribe Section -->
+        <section class="subscribeWrapper flex items-center flex-col m-10 sm:m-5">
+            <h2 class="md:text-4xl text-center m-2 font-bold sm:m-1 sm:text-2xl">Subscribe to our newsletter to get updates to our latest collections
+            </h2>
+            <p class="md:text-xl m-2 text-gray-500 sm:m-1 sm:text-sm">Get 20% off on your first order just by subscribing to our newsletter.
+            </p>
+            <div class="email-grid m-5">
+                <div class="email-box">
+                    <i class="fa-regular fa-envelope text-2xl text-gray-500"></i>
+                    <input type="text" placeholder="Enter your Email">
+                </div>
+                <button class="subscribrBtn">Subscribe</button>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="footerWrapper">
+            <ul class="footerList">
+                <li class="footerItem">
+                    <h2>NOSTRA</h2>
+                </li>
+                <li class="footerItem">
+                    <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+                </li>
+            </ul>
+            <ul class="footerList">
+                <li class="footerItem">Shop</li>
+                <li class="footerItem"><a href="#">All Collection</a></li>
+                <li class="footerItem"><a href="#">Winter Edition</a></li>
+                <li class="footerItem"><a href="#">Discount</a></li>
+            </ul>
+            <ul class="footerList">
+                <li class="footerItem">Company</li>
+                <li class="footerItem"><a href="#">About Us</a></li>
+                <li class="footerItem"><a href="#">Contact</a></li>
+                <li class="footerItem"><a href="#">Affiliates</a></li>
+            </ul>
+            <ul class="footerList">
+                <li class="footerItem">Support</li>
+                <li class="footerItem"><a href="#">FAQ's</a></li>
+                <li class="footerItem"><a href="#">cookie Policy</a></li>
+                <li class="footerItem"><a href="#">Terms of Use</a></li>
+            </ul>
+            <ul class="footerList">
+                <li class="footerItem">Payment</li>
+                <li class="footerItem"><i class="fa-brands fa-cc-visa text-3xl" style="color: #18dc87;"></i></li>
+                <li class="footerItem"><i class="fa-brands fa-cc-paypal text-3xl" style="color: #c9e444;"></i></li>
+                <li class="footerItem"><i class="fa-brands fa-google-pay text-3xl" style="color: #4d15f4;"></i></li>
+            </ul>
+            <div class="footerCopy">
+                <p>Copyright©2024. All right reserved.</p>
+            </div>
+            <div>
+
+            </div>
+        </section>
+    </div>
+</body>
+<script src="collection.js"></script>
+
+</html>

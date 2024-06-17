@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .sliderWrapper {
+    display: none;
+}
+
+.sliderWrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+</style>
+<body>
+  <section class="sliderSection">
+    <div class="sliderWrapper relative">
+        <img src="./img/slider2.jpg" alt="">
+        <!-- Content for slider 1 -->
+        <h1>sli 1</h1>
+    </div>
+    <div class="sliderWrapper relative">
+        <img src="./img/slider3.jpg" alt="">
+        <!-- Content for slider 2 -->
+        <h1>sli 2</h1>
+
+    </div>
+    <div class="sliderWrapper relative">
+        <img src="./img/slider4.jpg" alt="">
+        <!-- Content for slider 3 -->
+        <h1>sli 2</h1>
+
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+</section>
+</body>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.sliderWrapper');
+  const dots = document.querySelectorAll('.dot');
+  
+  function showSlide(n) {
+      slides.forEach(slide => slide.style.display = "none");
+      dots.forEach(dot => dot.classList.remove("active"));
+      slides[n].style.display = "block";
+      dots[n].classList.add("active");
+  }
+  
+  function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+  }
+  
+  function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+  }
+  
+  document.querySelector('.fa-caret-left').addEventListener('click', prevSlide);
+  document.querySelector('.fa-caret-right').addEventListener('click', nextSlide);
+  
+  dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+          currentSlide = index;
+          showSlide(currentSlide);
+      });
+  });
+  
+  // Show the first slide initially
+  showSlide(currentSlide);
+</script>
+</html>
