@@ -42,8 +42,8 @@ loginBtn.addEventListener("click",()=>{
         document.querySelector(".passError").style.display = "inline";
         isValid = false;
     }
-    loginLink = document.getElementById('loginbtn');
+    
     if(isValid) {
-        loginLink.href = 'index.html';
+        window.location.href = 'index.html';
     }
 })
